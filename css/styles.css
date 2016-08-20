@@ -1,0 +1,149 @@
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+body { 
+  background: url("../images/Tracy_homepage.jpg") no-repeat;
+  background-position: top center;
+  position: fixed;
+  background-size: cover;
+  width: 1200px;
+  height: auto;
+  overflow: auto;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+
+
+body {
+  width: 600px;
+  height: 1200px;
+}
+
+#socialmedia ul {
+  text-align: right;
+  margin: 15px 15px 0 0;
+}
+
+#socialmedia  li {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.email  {
+  background-image: url("../images/email_icon.png");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.linkedin  {
+  background-image: url("../images/linkedin_icon.png");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.instagram  {
+  background-image: url("../images/instagram_icon.png");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.googleplus  {
+  background-image: url("../images/google-plus_icon.png");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.facebook {
+  background-image: url("../images/facebook_icon.png");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.twitter  {
+  background-image: url("../images/twitter_icon.png");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.pinterest  {
+  background-image: url("../images/pinterest_icon.png");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.snapchat  {
+  background-image: url("../images/snapchat_icon.png");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.myname  {
+  background-image: url("../images/name.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  width: 200px;
+  height: 100px;
+  margin: 250px 0 10px 20px;
+  border: 0;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+}
+
+.menu li:hover {
+  background-color: #985e6d;
+}
+
+.menu li  {
+  background-color: #494e6b;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: semi-bold;
+  padding-top: 15px;
+  font-size: 25px;  
+  color: #192231;
+  border-top: solid 1px #192231;
+}
+
+.menu li .contact {
+  border-bottom: solid 1px #192231;
+}
+
+}
+/* Mobile Version - 768px */
+
