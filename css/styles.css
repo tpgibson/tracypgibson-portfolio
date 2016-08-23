@@ -271,7 +271,7 @@ Author: Tracy Gibson
     /* Desktop */
     
     @media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-            .tracy_bgimage {
+        .tracy_bgimage {
             background: url("../images/Tracy_homepage.jpg");
             background-repeat: no-repeat;
             background-size: contain;
@@ -313,7 +313,7 @@ Author: Tracy Gibson
             clear: both;
             float: left;
             position: relative;
-            margin: 226px 0 0 0;
+            margin: 231px 0 0 0;
             padding: 0;
             border: 0;
         }
@@ -327,7 +327,7 @@ Author: Tracy Gibson
             opacity: 0.7;
             font-family: Verdana, Geneva, sans-serif;
             font-weight: bold;
-            font-size: 30px;
+            font-size: 26px;
             color: #192231;
             margin-right: -5px;
         }
@@ -336,7 +336,7 @@ Author: Tracy Gibson
         .experience,
         .myblog,
         .contact {
-            padding: 40px 78px 40px 79px;
+            padding: 40px 89px 40px 90px;
             border-left: 2px solid #192231;
         }
         .contact {
@@ -373,7 +373,6 @@ Author: Tracy Gibson
             text-align: center;
             vertical-align: middle;
             padding-top: 40px;
-            margin-top: 326px;
+            margin-top: 325px;
         }
-    }
     }
