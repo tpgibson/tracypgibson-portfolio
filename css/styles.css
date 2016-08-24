@@ -98,17 +98,17 @@ Author: Tracy Gibson
         .twitterimg,
         .pinterestimg,
         .snapchatimg {
-            max-width: 60px;
-            max-height: 60px;
-            margin-left: 8px;
+            max-width: 80%;
+            max-height: 80%;
+            margin-left: 5px;
         }
         .myname_container {
             position: relative;
             text-align: center;
-            margin-bottom: -70px;
+            margin-bottom: -20%;
         }
         .tracygibsonimg {
-            width: 50%;
+            width: 60%;
             border: 0;
         }
         .menu_container ul {
@@ -168,7 +168,7 @@ Author: Tracy Gibson
             font-size: 1rem;
             text-align: center;
             vertical-align: middle;
-            padding-top: 40px;
+            padding: 8%;
         }
     }
     /* Tablets (covers most standard devices, including iPad mini, iPad, Kindle, Galaxy, and Nexus) - Portrait and Landscape  */
