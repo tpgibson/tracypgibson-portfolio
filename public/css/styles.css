@@ -1,346 +1,357 @@
-    /*
+/*
 Project Name: Tracy P. Gibson Portfolio
 Author: Tracy Gibson
 */
-    /******************************************
+
+
+/******************************************
 /* SETUP
 /*******************************************/
-    /* Box Model Hack */
-    
-    * {
-        -moz-box-sizing: border-box;
-        /* Firexfox */
-        -webkit-box-sizing: border-box;
-        /* Safari/Chrome/iOS/Android */
-        box-sizing: border-box;
-        /* IE */
-    }
-    /* Clear fix hack */
-    
-    .clearfix:after {
-        content: ".";
-        display: block;
-        clear: both;
-        visibility: hidden;
-        line-height: 0;
-        height: 0;
-    }
-    
-    .clear {
-        clear: both;
-    }
-    /******************************************
+
+
+/* Box Model Hack */
+
+* {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+    /* IE */
+}
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/******************************************
 /* BASE STYLES
 /*******************************************/
-    
-    html {
-        font-size: 12px;
-        line-height: 1.4;
-        font-family: 'Open Sans';
-    }
-    
-    body {
-        color: #98878F;
-        width: 100%;
-        height: auto;
-        background-color: #494E6B;
-    }
-    /******************************************
+
+html {
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: 'Open Sans';
+}
+
+body {
+    color: #98878F;
+    width: 100%;
+    height: auto;
+    background-color: #494E6B;
+}
+
+
+/******************************************
 /* LAYOUT
 /*******************************************/
-    
-    ul li {
-        list-style-type: none;
-    }
-    
-    a:hover,
-    a:visited,
-    a:link,
-    a:active {
-        text-decoration: none;
-    }
-    /******************************************
+
+ul li {
+    list-style-type: none;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+
+/******************************************
 /* MOBILE - Phone Devices(covers most mobile devices,
 including iPhone 6 and 6+ and Samsung) - Portrait and Landscape */
-    /*******************************************/
-    
-    @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
-        .tracy_bgimage_mobile {
-            background: url("../images/Tracy_homepage.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            float: left;
-            width: 100%;
-            height: auto;
-            position: relative;
-            padding-top: 59%;
-            margin-top: 0;
-            margin-bottom: 2%;
-        }
-        .tracy_bgimage_tabdesk {
-            display: none;
-        }
-        .social_container_mobile {
-            clear: both;
-            float: left;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            width: 95%;
-            height: 95%;
-        }
-        .social_container_tabdesk {
-            display: none;
-        }
-        .email,
-        .linkedin,
-        .instagram,
-        .googleplus,
-        .facebook,
-        .twitter,
-        .pinterest,
-        .snapchat {
-            width: 100%;
-            margin-left: 2%;
-        }
-        .googleplus {
-            margin-right: 2%;
-        }
-        .emailimg,
-        .linkedinimg,
-        .instagramimg,
-        .googleplusimg,
-        .facebookimg,
-        .twitterimg,
-        .pinterestimg,
-        .snapchatimg {
-            width: 100%;
-        }
-        .myname_container_mobile {
-            text-align: center;
-            margin-top: 0%;
-            width: 100%;
-            height: auto;
-        }
-        .myname_container_tabdesk {
-            display: none;
-        }
-        .menu_container_mobile {
-            clear: both;
-            float: left;
-            width: 100%;
-            height: auto;
-            margin: 0;
-        }
-        .menu_container_tabdesk {
-            display: none;
-        }
-        .menu ul {
-            width: 100%;
-            height: auto;
-            margin: 0;
-            padding-left: 0;
-        }
-        .menu ol,
-        ul {
-            padding: 0 0 0 0;
-        }
-        .menu li {
-            background-color: #985E6D;
-            font-family: Verdana, Geneva, sans-serif;
-            text-align: center;
-            font-weight: 700;
-            width: 100%;
-            height: 100%;
-            padding: 10% 15%;
-            font-size: 5rem;
-            color: #192231;
-            border-top: solid 1px #192231;
-            clear: both;
-            float: left;
-            margin: 0;
-        }
-        a.aboutmelink:link,
-        a.aboutmelink:visited,
-        a.myworklink:link,
-        a.myworklink:visited,
-        a.experiencelink:link,
-        a.experiencelink:visited,
-        a.mybloglink:link,
-        a.mybloglink:visited,
-        a.contactlink:link,
-        a.contactlink:visited {
-            color: #192231;
-            text-decoration: none;
-        }
-        a.aboutmelink li:hover,
-        a.myworklink li:hover,
-        a.experiencelink li:hover,
-        a.mybloglink li:hover,
-        a.contactlink li:hover {
-            color: #192231;
-            text-decoration: none;
-            transition: background-color 0.5s ease;
-            background-color: #98878F;
-        }
-        .contact {
-            border-bottom: solid 1px #192231;
-        }
-        .footer_container {
-            clear: both;
-            float: left;
-            width: 100%;
-            height: 140px;
-            background-color: #192231;
-            position: relative;
-            color: white;
-            font-size: 2rem;
-            text-align: center;
-            vertical-align: middle;
-            padding-top: 40px;
-        }
+
+
+/*******************************************/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    .tracy_bgimage_mobile {
+        background: url("../images/Tracy_homepage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 59%;
+        margin-top: 0;
+        margin-bottom: 2%;
     }
-    /******************************************
+    .tracy_bgimage_tabdesk {
+        display: none;
+    }
+    .social_container_mobile {
+        clear: both;
+        float: left;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 95%;
+        height: 95%;
+    }
+    .social_container_tabdesk {
+        display: none;
+    }
+    .email,
+    .linkedin,
+    .instagram,
+    .googleplus,
+    .facebook,
+    .twitter,
+    .pinterest,
+    .snapchat {
+        width: 100%;
+        margin-left: 2%;
+    }
+    .googleplus {
+        margin-right: 2%;
+    }
+    .emailimg,
+    .linkedinimg,
+    .instagramimg,
+    .googleplusimg,
+    .facebookimg,
+    .twitterimg,
+    .pinterestimg,
+    .snapchatimg {
+        width: 100%;
+    }
+    .myname_container_mobile {
+        text-align: center;
+        margin-top: 0%;
+        width: 100%;
+        height: auto;
+    }
+    .myname_container_tabdesk {
+        display: none;
+    }
+    .menu_container_mobile {
+        clear: both;
+        float: left;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .menu_container_tabdesk {
+        display: none;
+    }
+    .menu ul {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-left: 0;
+    }
+    .menu ol,
+    ul {
+        padding: 0 0 0 0;
+    }
+    .menu li {
+        background-color: #985E6D;
+        font-family: Verdana, Geneva, sans-serif;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        height: 100%;
+        padding: 10% 15%;
+        font-size: 5rem;
+        color: #192231;
+        border-top: solid 1px #192231;
+        clear: both;
+        float: left;
+        margin: 0;
+    }
+    a.aboutmelink:link,
+    a.aboutmelink:visited,
+    a.myworklink:link,
+    a.myworklink:visited,
+    a.experiencelink:link,
+    a.experiencelink:visited,
+    a.mybloglink:link,
+    a.mybloglink:visited,
+    a.contactlink:link,
+    a.contactlink:visited {
+        color: #192231;
+        text-decoration: none;
+    }
+    a.aboutmelink li:hover,
+    a.myworklink li:hover,
+    a.experiencelink li:hover,
+    a.mybloglink li:hover,
+    a.contactlink li:hover {
+        color: #192231;
+        text-decoration: none;
+        transition: background-color 0.5s ease;
+        background-color: #98878F;
+    }
+    .contact {
+        border-bottom: solid 1px #192231;
+    }
+    .footer_container {
+        clear: both;
+        float: left;
+        width: 100%;
+        height: 140px;
+        background-color: #192231;
+        position: relative;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 40px;
+    }
+}
+
+
+/******************************************
 /* TABLETS & DESKTOP - Covers most standard tablet devices,
 including iPad mini and iPad, Kindle, Galaxy, & Nexus - Portrait and Landscape*/
-    /*******************************************/
-    
-    @media only screen and (min-device-width: 737px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-        .tracy_bgimage_tabdesk {
-            background: url("../images/Tracy_homepage.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            float: left;
-            width: 100%;
-            height: auto;
-            position: relative;
-            margin-right: 0;
-        }
-        .tracy_bgimage_mobile {
-            display: none;
-        }
-        .myname_container_mobile {
-            display: none;
-        }
-        .myname_container_tabdesk {
-            position: relative;
-            width: 100%;
-            height: auto;
-            border: 0;
-            float: left;
-            margin-top: 50%;
-            margin-left: 10%;
-            margin-right: 0;
-            margin-bottom: 10%;
-        }
-        .mynameimg {
-            width: 45%;
-            height: 45%;
-        }
-        .social_container_tabdesk {
-            text-align: center;
-            float: right;
-            position: relative;
-            width: 100%;
-            height: 100%;
-            margin-right: 0;
-        }
-        .social_container_mobile {
-            display: none;
-        }
-        .emailimg,
-        .linkedinimg,
-        .instagramimg,
-        .googleplusimg,
-        .facebookimg,
-        .twitterimg,
-        .pinterestimg,
-        .snapchatimg {
-            float: right;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: column-reverse;
-            width: 6%;
-            height: 6%;
-            padding-right: 1%;
-            padding-top: 5px;
-        }
-        .menu_container_tabdesk {
-            float: left;
-            position: relative;
-            width: 100%;
-            height: auto;
-            margin: 0 0 0 0;
-            padding: 0;
-            border: 0;
-        }
-        .menu_container_mobile {
-            display: none;
-        }
-        .menu {
-            width: 100%;
-            height: auto;
-            padding: 0;
-            margin-right: 0;
-        }
-        .menu li {
-            display: inline;
-            background-color: #985E6D;
-            opacity: 0.7;
-            font-family: Verdana, Geneva, sans-serif;
-            font-weight: bold;
-            font-size: 1.5rem;
-            color: #192231;
-            width: 100%;
-            height: auto;
-        }
-        .aboutme,
-        .mywork,
-        .experience,
-        .myblog,
-        .contact {
-            border-left: 2px solid #192231;
-        }
-        .contact {
-            border-right: 2px solid #192231;
-        }
-        a.aboutmelink:link,
-        a.aboutmelink:visited,
-        a.myworklink:link,
-        a.myworklink:visited,
-        a.experiencelink:link,
-        a.experiencelink:visited,
-        a.mybloglink:link,
-        a.mybloglink:visited,
-        a.contactlink:link,
-        a.contactlink:visited {
-            color: #192231;
-            text-decoration: none;
-        }
-        a.aboutmelink li:hover,
-        a.myworklink li:hover,
-        a.experiencelink li:hover,
-        a.mybloglink li:hover,
-        a.contactlink li:hover {
-            color: #192231;
-            text-decoration: none;
-            transition: background-color 0.5s ease;
-            background-color: #494E6B;
-        }
-        .footer {}
-        .footer_container {
-            clear: both;
-            float: left;
-            width: 100%;
-            height: 140px;
-            background-color: #192231;
-            position: relative;
-            color: white;
-            font-size: 1rem;
-            text-align: center;
-            vertical-align: middle;
-            padding-top: 40px;
-        }
+
+
+/*******************************************/
+
+@media only screen and (min-device-width: 737px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .tracy_bgimage_tabdesk {
+        background: url("../images/Tracy_homepage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-right: 0;
     }
+    .tracy_bgimage_mobile {
+        display: none;
+    }
+    .myname_container_mobile {
+        display: none;
+    }
+    .myname_container_tabdesk {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border: 0;
+        float: left;
+        padding-top: 38%;
+        padding-left: 10%;
+        margin-right: 0;
+        padding-bottom: 5%;
+    }
+    .mynameimg {
+        width: 40%;
+        height: 40%;
+    }
+    .social_container_tabdesk {
+        text-align: center;
+        float: right;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+    }
+    .social_container_mobile {
+        display: none;
+    }
+    .emailimg,
+    .linkedinimg,
+    .instagramimg,
+    .googleplusimg,
+    .facebookimg,
+    .twitterimg,
+    .pinterestimg,
+    .snapchatimg {
+        float: right;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 4%;
+        height: 4%;
+        padding-right: 1%;
+        padding-top: 4%;
+    }
+    .menu_container_tabdesk {
+        width: 100%;
+        height: auto;
+        float: left;
+        position: relative;
+    }
+    .menu_container_mobile {
+        display: none;
+    }
+    .menu_tabdesk {}
+    .aboutmelink,
+    .myworklink,
+    .experiencelink,
+    .mybloglink,
+    .contactlink {
+        position: relative;
+        display: inine;
+        float: left;
+        background-color: #985E6D;
+        width: 20%;
+        height: 45px;
+        color: #192231;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-style: regular;
+        text-align: center;
+        vertical-align: middle;
+        padding: 2% 0 4% 0;
+        border-right: solid 1px #494E6B;
+    }
+    .contactlink {
+        border: 0;
+    }
+    .aboutmelink a:link,
+    .aboutmelink a:visited,
+    .myworklink a:link,
+    .myworklink a:visited,
+    .experiencelink a:link,
+    .experiencelink a:visited,
+    .mybloglink a:link,
+    .mybloglink a:visited,
+    .contactlink a:link,
+    .contactlink a:visited {
+        color: #192231;
+        text-decoration: none;
+    }
+    .aboutmelink a:hover,
+    .myworklink a:hover,
+    .experiencelink a:hover,
+    .mybloglink a:hover,
+    .contactlink a:hover {
+        color: #192231;
+        text-decoration: none;
+        transition: background-color 0.5s ease;
+        background-color: #494E6B;
+    }
+    .footer_container {
+        clear: both;
+        float: left;
+        width: 100%;
+        height: 100px;
+        background-color: #192231;
+        position: relative;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 40px;
+    }
+}
