@@ -42,7 +42,7 @@ Author: Tracy Gibson
     body {
         color: #98878F;
         width: 100%;
-        height: 100%;
+        height: auto;
         background-color: #494E6B;
     }
     /******************************************
@@ -59,8 +59,10 @@ Author: Tracy Gibson
     a:active {
         text-decoration: none;
     }
-    /* MOBILE */
-    /* Phone Devices (covers most mobile devices, including iPhone 6 and 6+ and Samsung) - Portrait and Landscape */
+    /******************************************
+/* MOBILE - Phone Devices(covers most mobile devices,
+including iPhone 6 and 6+ and Samsung) - Portrait and Landscape */
+    /*******************************************/
     
     @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
         .tracy_bgimage_mobile {
@@ -69,7 +71,7 @@ Author: Tracy Gibson
             background-size: cover;
             float: left;
             width: 100%;
-            height: 100%;
+            height: auto;
             position: relative;
             padding-top: 59%;
             margin-top: 0;
@@ -78,16 +80,18 @@ Author: Tracy Gibson
         .tracy_bgimage_tabdesk {
             display: none;
         }
-        .social_container {
+        .social_container_mobile {
             clear: both;
             float: left;
             position: relative;
-            margin: 10px 0;
             display: flex;
             justify-content: center;
             align-content: center;
-            width: 100%;
-            height: 100%;
+            width: 95%;
+            height: 95%;
+        }
+        .social_container_tabdesk {
+            display: none;
         }
         .email,
         .linkedin,
@@ -117,18 +121,19 @@ Author: Tracy Gibson
             text-align: center;
             margin-top: 0%;
             width: 100%;
+            height: auto;
         }
         .myname_container_tabdesk {
             display: none;
         }
         .menu_container_mobile {
+            clear: both;
+            float: left;
             width: 100%;
             height: auto;
             margin: 0;
-            clear: both;
-            float: left;
         }
-        .myname_container_tabdesk {
+        .menu_container_tabdesk {
             display: none;
         }
         .menu ul {
@@ -137,7 +142,8 @@ Author: Tracy Gibson
             margin: 0;
             padding-left: 0;
         }
-        .menu ol, ul {
+        .menu ol,
+        ul {
             padding: 0 0 0 0;
         }
         .menu li {
@@ -146,9 +152,9 @@ Author: Tracy Gibson
             text-align: center;
             font-weight: 700;
             width: 100%;
-            height: auto;
-            padding: 10% 2%;
-            font-size: 3rem;
+            height: 100%;
+            padding: 10% 15%;
+            font-size: 5rem;
             color: #192231;
             border-top: solid 1px #192231;
             clear: both;
@@ -195,17 +201,21 @@ Author: Tracy Gibson
             padding-top: 40px;
         }
     }
-    /* Tablets and Desktop (covers most standard tablet devices, including iPad mini, iPad, Kindle, Galaxy, and Nexus) - Portrait and Landscape  */
+    /******************************************
+/* TABLETS & DESKTOP - Covers most standard tablet devices,
+including iPad mini and iPad, Kindle, Galaxy, & Nexus - Portrait and Landscape*/
+    /*******************************************/
     
     @media only screen and (min-device-width: 737px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
         .tracy_bgimage_tabdesk {
             background: url("../images/Tracy_homepage.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            width: 100%;
-            height: 100%;
             float: left;
+            width: 100%;
+            height: auto;
             position: relative;
+            margin-right: 0;
         }
         .tracy_bgimage_mobile {
             display: none;
@@ -216,16 +226,28 @@ Author: Tracy Gibson
         .myname_container_tabdesk {
             position: relative;
             width: 100%;
-            height: 100px;
-            margin: 580px 0 10px 110px;
+            height: auto;
             border: 0;
+            float: left;
+            margin-top: 50%;
+            margin-left: 10%;
+            margin-right: 0;
+            margin-bottom: 10%;
         }
-        .social_container {
+        .mynameimg {
+            width: 45%;
+            height: 45%;
+        }
+        .social_container_tabdesk {
             text-align: center;
             float: right;
             position: relative;
-            margin-top: 0%;
             width: 100%;
+            height: 100%;
+            margin-right: 0;
+        }
+        .social_container_mobile {
+            display: none;
         }
         .emailimg,
         .linkedinimg,
@@ -239,15 +261,18 @@ Author: Tracy Gibson
             position: relative;
             display: flex;
             justify-content: flex-start;
-            align-content: column;
-            width: 4%;
-            height: 4%;
+            flex-direction: column-reverse;
+            width: 6%;
+            height: 6%;
+            padding-right: 1%;
+            padding-top: 5px;
         }
         .menu_container_tabdesk {
-            clear: both;
-            float: right;
+            float: left;
             position: relative;
-            margin: 226px 0 0 0;
+            width: 100%;
+            height: auto;
+            margin: 0 0 0 0;
             padding: 0;
             border: 0;
         }
@@ -255,25 +280,27 @@ Author: Tracy Gibson
             display: none;
         }
         .menu {
+            width: 100%;
+            height: auto;
             padding: 0;
+            margin-right: 0;
         }
         .menu li {
             display: inline;
-            margin: 0;
             background-color: #985E6D;
             opacity: 0.7;
             font-family: Verdana, Geneva, sans-serif;
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 1.5rem;
             color: #192231;
-            margin-right: -5px;
+            width: 100%;
+            height: auto;
         }
         .aboutme,
         .mywork,
         .experience,
         .myblog,
         .contact {
-            padding: 40px 78px 40px 79px;
             border-left: 2px solid #192231;
         }
         .contact {
@@ -302,14 +329,18 @@ Author: Tracy Gibson
             transition: background-color 0.5s ease;
             background-color: #494E6B;
         }
+        .footer {}
         .footer_container {
+            clear: both;
+            float: left;
             width: 100%;
-            height: 125px;
+            height: 140px;
             background-color: #192231;
+            position: relative;
             color: white;
+            font-size: 1rem;
             text-align: center;
             vertical-align: middle;
             padding-top: 40px;
-            margin-top: 326px;
         }
     }
